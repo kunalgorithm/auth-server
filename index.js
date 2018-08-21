@@ -8,11 +8,15 @@ const morgan = require('morgan');
 const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
+const cors = require('cors');
 mongoose.connect('mongodb://localhost/auth', { useNewUrlParser: true })
 // App Setup
 // Morgan is basically just a logging middleware and we are 
 // using it for debugging
 app.use(morgan('combined'));
+
+// use CORS to allow requests from any domain names 
+app.use(cors());
 app.use(bodyParser.json({type: '*/*'}));
 router(app);
 // Server Setup 
