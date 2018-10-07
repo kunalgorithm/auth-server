@@ -1,5 +1,7 @@
 # auth-server
-A boilerplate server with authentication built with Node.js, MongoDB, Passport, and Express.
+An HTTP server with authentication built with NodeJS, MongoDB, Passport, and Express. The server provides endpoints for signing in with username and password, logging with in JSON web tokens using PassportJS's local authentication provider, and allows CRUD apoerations using the RESTful interface.
+ 
+Makes for a solid boilerplate for a Node backend.
 
 # Usage 
 
